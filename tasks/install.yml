@@ -1,0 +1,8 @@
+---
+- name: INSTALL | Installs Requests and Proxmoxer from PyPi index
+  ansible.builtin.pip:
+    name:
+      - requests
+      - proxmoxer
+    state: present
+

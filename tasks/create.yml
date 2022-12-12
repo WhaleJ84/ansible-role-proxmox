@@ -1,0 +1,38 @@
+---
+- name: CREATE | Instance
+  community.general.proxmox:
+    vmid: "{{ proxmox_vmid }}"
+    node: "{{ proxmox_node }}"
+    api_host: "{{ proxmox_api_host }}"
+    api_user: "{{ proxmox_api_user }}"
+    api_token_id: "{{ proxmox_api_token_id }}"
+    api_token_secret: "{{ proxmox_api_token_secret }}"
+    hostname: "{{ proxmox_hostname }}"
+    password: "{{ proxmox_password }}"
+    ostemplate: "{{ proxmox_ostemplate }}"
+    storage: "{{ proxmox_storage }}"
+    cores: "{{ proxmox_cores }}"
+    cpus: "{{ proxmox_cpus }}"
+    cpuunits: "{{ proxmox_cpuunits }}"
+    description: "{{ proxmox_description }}"
+    disk: "{{ proxmox_disk }}"
+    features: "{{ proxmox_features }}"
+    force: "{{ proxmox_force }}"
+    hookscript: "{{ proxmox_hookscript }}"
+    ip_address: "{{ proxmox_ip_address }}"
+    memory: "{{ proxmox_memory }}"
+    mounts: "{{ proxmox_mounts }}"
+    nameserver: "{{ proxmox_nameserver }}"
+    netif: "{{ proxmox_netif }}"
+    onboot: "{{ proxmox_onboot }}"
+    pool: "{{ proxmox_pool }}"
+    proxmox_default_behavior: "{{ proxmox_default_behavior }}"
+    pubkey: "{{ proxmox_pubkey }}"
+    searchdomain: "{{ proxmox_searchdomain }}"
+    state: present
+    swap: "{{ proxmox_swap }}"
+    timeout: "{{ proxmox_timeout }}"
+    unprivileged: "{{ proxmox_unprivileged }}"
+    validate_certs: "{{ proxmox_validate_certs }}"
+  tags: create
+

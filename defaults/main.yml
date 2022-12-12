@@ -6,7 +6,7 @@ proxmox_api_token_secret:
 proxmox_api_user:
 proxmox_clone:
 proxmox_clone_type:
-proxmox_cores:
+proxmox_cores: 1
 proxmox_cpus:
 proxmox_cpuunits:
 proxmox_description:
@@ -19,7 +19,7 @@ proxmox_ip_address:
 proxmox_memory:
 proxmox_mounts:
 proxmox_nameserver:
-proxmox_netif:
+proxmox_netif: {"net0": "name=eth0,ip=dhcp,ip6=dhcp,bridge=vmbr0"}
 proxmox_node:
 proxmox_onboot:
 proxmox_ostemplate:

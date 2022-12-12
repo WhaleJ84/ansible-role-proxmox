@@ -16,6 +16,7 @@ Role Variables
 --------------
 
 See 'defaults/main.yml' or run `grep -E '^[[:alpha:]_]*:' defaults/main.yml| cut -f1 -d:` for plain list.
+Details of the variable contents are described [here](https://docs.ansible.com/ansible/latest/collections/community/general/proxmox_module.html#parameters).
 
 Example Playbook
 ----------------

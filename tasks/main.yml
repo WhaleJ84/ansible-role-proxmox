@@ -1,0 +1,19 @@
+---
+- name: Include install tasks
+  tags: install
+  include_tasks: install.yml
+
+- name: Include create tasks
+  tags: create
+  include_tasks: create.yml
+
+- name: Include control tasks
+  tags: control
+  include_tasks: control.yml
+
+- name: Include delete tasks
+  tags:
+    - never
+    - delete
+  include_tasks: delete.yml
+

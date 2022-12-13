@@ -5,4 +5,5 @@
       - requests
       - proxmoxer
     state: present
+  tags: install
 

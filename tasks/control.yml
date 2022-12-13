@@ -8,4 +8,5 @@
     api_token_secret: "{{ proxmox_api_token_secret }}"
     state: "{{ proxmox_state }}"
     force: "{{ proxmox_force }}"
+  tags: control
 

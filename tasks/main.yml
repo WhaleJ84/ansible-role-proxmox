@@ -12,8 +12,8 @@
   include_tasks: control.yml
 
 - name: Include delete tasks
-  tags:
-    - never
-    - delete
   include_tasks: delete.yml
+  tags:
+    - delete
+    - never
 
